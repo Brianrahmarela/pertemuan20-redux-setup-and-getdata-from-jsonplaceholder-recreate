@@ -1,25 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+// import Header from './components/Header'
+// import DetailProfile from './components/DetailProfile'
+
+//23. import komponent counternya
+import Counter from './components/Counter'
+
+//86. import komponen data
+import Data from './components/Data'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Redux</h1>
+      {/* 24. panggil komponen counternya */}
+      <Counter/>
+      {/* 84. buat component baru yaitu Data*/}
+      <Data />
     </div>
-  );
+  ); 
 }
 
 export default App;

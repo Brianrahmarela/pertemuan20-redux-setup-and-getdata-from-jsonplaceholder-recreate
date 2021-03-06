@@ -4,10 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//1. import Provider
+import { Provider } from 'react-redux';
+//6. import file Store dari folder redux yg dibuat
+import storeReducers from './redux/store';
+
 ReactDOM.render(
-  <React.StrictMode>
+  //2. ganti strict mode dgn tag provider
+  //3. buat folder bernama redux 
+  //7. masukan store yg di import sbg props variable dgn varnya storeReducers
+  <Provider store={storeReducers}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
